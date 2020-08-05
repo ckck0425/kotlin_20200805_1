@@ -20,21 +20,26 @@ class MainActivity : AppCompatActivity() {
             Log.d("버튼클릭","ClickME버튼 눌림!")
 
             Toast.makeText(this,"Click me 버튼 눌림", Toast.LENGTH_SHORT).show()
-
         }
 
 //        두번째 버튼이 눌릴때
         secondBtn.setOnClickListener {
             Log.d("버튼눌림","두번째 버튼 눌림!")
 
-
             Toast.makeText(this,"두번째 버튼 눌림!", Toast.LENGTH_SHORT).show()
-
+        }
+//        복사하기 버튼이 눌리면 할 일
+        copyBtn.setOnClickListener {
+//            Edt 에 입력된 내용을 받아와서 (임시저장)
+            val inputMessage = messageEdt.text.toString()
+//            Txt 에 문구로 반영
+            copyResultTxt.text = inputMessage
 
 
 
 
         }
+
 
     }
 }
