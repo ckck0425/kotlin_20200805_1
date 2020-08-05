@@ -19,5 +19,11 @@ class MainActivity : AppCompatActivity() {
             Log.d("버튼클릭","ClickME버튼 눌림!")
         }
 
+//        두번째 버튼이 눌릴때
+        secondBtn.setOnClickListener {
+            Log.d("버튼눌림","두번째 버튼 눌림!")
+
+        }
+
     }
 }
