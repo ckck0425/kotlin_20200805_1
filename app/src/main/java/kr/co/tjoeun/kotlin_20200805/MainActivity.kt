@@ -3,6 +3,7 @@ package kr.co.tjoeun.kotlin_20200805
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +18,21 @@ class MainActivity : AppCompatActivity() {
         clickMeBtn.setonClickListener {it:View!
 //        이 중괄호 내부의 코드 => clickMeBtn 이 눌리면 실행될 코드
             Log.d("버튼클릭","ClickME버튼 눌림!")
+
+            Toast.makeText(this,"Click me 버튼 눌림", Toast.LENGTH_SHORT).show()
+
         }
 
 //        두번째 버튼이 눌릴때
         secondBtn.setOnClickListener {
             Log.d("버튼눌림","두번째 버튼 눌림!")
+
+
+            Toast.makeText(this,"두번째 버튼 눌림!", Toast.LENGTH_SHORT).show()
+
+
+
+
 
         }
 
